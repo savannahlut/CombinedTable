@@ -18,4 +18,6 @@ public class CombinedTable{
         } 
         return desireable - 10;
     }
+
+    
 }

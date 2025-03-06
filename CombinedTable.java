@@ -7,11 +7,15 @@ public class CombinedTable{
         this.two = two;
     }
 
-    public boolean canSeat(){
-        return true;
+    public boolean canSeat(int people){
+        return people <= (one.getNumSeats() + two.getNumSeats() - 2);
     }
 
     public double getDesirability(){
-        return 0.0;
+        double desireable = ( one.getViewQuality() + two.getViewQuality() ) / 2 ;
+        if(one.getHeight() == two.getHeight()){
+            return desireable ;
+        } 
+        return desireable - 10;
     }
 }

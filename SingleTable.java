@@ -3,6 +3,11 @@ public class SingleTable
     int seats = 0;
     int height = 0; 
     double quality = 0.0;
+    SingleTable(int seats, int height, double quality){
+        this.seats = seats;
+        this.height = height;
+        this.quality = quality;
+    }
     /** Returns the number of seats at this table. The value is always greater than or equal to 4. */
     public int getNumSeats()
     {return seats; }
